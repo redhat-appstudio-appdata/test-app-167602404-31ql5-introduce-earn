@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: devfile-sample-code-with-quarkus-q8f3
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: devfile-sample-code-with-quarkus-q8f3
+    app.kubernetes.io/part-of: test-app-167602404
+  name: devfile-sample-code-with-quarkus-q8f3
+  namespace: abhindas-tenant
+spec:
+  ports:
+  - port: 8081
+    targetPort: 8081
+  selector:
+    app.kubernetes.io/instance: devfile-sample-code-with-quarkus-q8f3
+status:
+  loadBalancer: {}

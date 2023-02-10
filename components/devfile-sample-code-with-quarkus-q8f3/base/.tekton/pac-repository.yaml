@@ -1,0 +1,15 @@
+apiVersion: pipelinesascode.tekton.dev/v1alpha1
+kind: Repository
+metadata:
+  annotations:
+    appstudio.openshift.io/application: test-app-167602404
+    appstudio.openshift.io/component: devfile-sample-code-with-quarkus-q8f3
+    build.appstudio.openshift.io/build: "true"
+    build.appstudio.openshift.io/type: build
+    build.appstudio.openshift.io/version: "0.1"
+    pipelines.appstudio.openshift.io/type: build
+  creationTimestamp: null
+  name: devfile-sample-code-with-quarkus-q8f3
+  namespace: abhindas-tenant
+spec:
+  url: https://github.com/dheerajodha/devfile-sample-code-with-quarkus
